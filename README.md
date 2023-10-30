@@ -1,6 +1,6 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# An example of the implementation of an animated button in React Native
+# An example of an animated button implementation in React Native
 
 # Getting Started
 
