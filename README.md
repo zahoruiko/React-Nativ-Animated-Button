@@ -26,9 +26,6 @@ yarn start
 ```
 ## Result
 
-### Initial form view
+### Initial view
 
 <img src="https://github.com/zahoruiko/React-Native-Animated-Button/blob/main/promoImages/Screen-1.png" width="240" />
-
-### The form informs you about the need to enter the required data
-
