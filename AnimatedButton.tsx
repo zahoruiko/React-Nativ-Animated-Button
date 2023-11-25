@@ -1,8 +1,13 @@
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, { runOnJS, useAnimatedStyle, useSharedValue, withSpring, withTiming } from 'react-native-reanimated';
 
-export default AnimatedButton = ({ buttonText }) => {
+type TAnimatedButtonProps = {
+  buttonText: string;
+}
+
+const AnimatedButton: React.FC<TAnimatedButtonProps> = ({ buttonText }) => {
   const scaleDownAnimation = useSharedValue(1);
   const buttonBackgroundColorAnimation = useSharedValue('#28B463');
 
@@ -41,6 +46,8 @@ export default AnimatedButton = ({ buttonText }) => {
     </View>
   );
 };
+
+export default AnimatedButton;
 
 const styles = StyleSheet.create({
   container: {
