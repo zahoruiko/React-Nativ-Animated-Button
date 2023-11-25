@@ -4,7 +4,7 @@ import Animated, { runOnJS, useAnimatedStyle, useSharedValue, withSpring, withTi
 
 export default AnimatedButton = ({ buttonText }) => {
   const scaleDownAnimation = useSharedValue(1);
-  const buttonBackgroundColorAnimation = useSharedValue('orange');
+  const buttonBackgroundColorAnimation = useSharedValue('#28B463');
 
   const handleButtonPress = () => {
     console.log('Tap!');
@@ -14,12 +14,12 @@ export default AnimatedButton = ({ buttonText }) => {
     .onBegin(() => {
       'worklet';
       scaleDownAnimation.value = withSpring(0.95);
-      buttonBackgroundColorAnimation.value = withTiming('green');
+      buttonBackgroundColorAnimation.value = withTiming('#2ECC71');
     })
     .onFinalize(() => {
       'worklet';
       scaleDownAnimation.value = withSpring(1);
-      buttonBackgroundColorAnimation.value = withTiming('orange');
+      buttonBackgroundColorAnimation.value = withTiming('#28B463');
       runOnJS(handleButtonPress)();
     });
 

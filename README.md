@@ -28,4 +28,4 @@ yarn start
 
 ### Initial view
 
-<img src="https://github.com/zahoruiko/React-Native-Animated-Button/blob/main/promoImages/Screen-1.png" width="240" />
+<img src="https://github.com/zahoruiko/React-Native-Animated-Button/blob/main/gitImages/video.gif" width="240" />
